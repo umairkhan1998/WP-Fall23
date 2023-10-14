@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="hero">
+ <nav>
+    <h2 class="logo">portfolio</span></h2>
+    <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+   
+</nav>
+  </div>
+
+  <section id="about" style="background-image: url(images.jpg) ;">
+    <h1 style="color: white;">Umair Abbas</h1>
+    <img src="umair.jpeg" alt="Your Photo" height=145 width= 145>
+    <h2 style="color: white;" >Education:</h2>
+   <p style="color: white;"> Matric: SPS Swat Public School<br> 
+    <p style="color: white;">FSC: SLPS College<br>
+    Currently pursuing a Bachelor's degree in Data Science at UET Peshawar<br></p>
+    <p style="color: white;">"Hello, I'm Umair Abbas, a passionate and dedicated undergraduate student pursuing a Bachelor's degree in Data Science at UET Peshawar. With a strong foundation in academics and a keen interest in data analysis.My educational journey, from SPS Swat Public School to SLPS College, has provided me with a solid academic background, and my current studies at UET Peshawar are shaping my future in the dynamic field of Data Science. I'm excited to explore new opportunities and challenges in this ever-evolving domain."</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+        <h3>Leptop Price Prediction</h3>
+        <h5>This is a supervised ML based model which will be used for prediction of leptops prices</h5>
+        <h5>Here all the required steps of preprocessing and modeling are applied and the model is tested which was giving above 90% accuracy. </h5>   
+        <h5>This is related to real world problem like house price prediction and cars price prediction.</h5>
+      <img src="lep.jpg" alt="Project 1" height="200" width="240">
+      <h3>Description</h3>
+      <p>Here in this project we have create a model that will be used for price prediction of leptops. The project is based on newly collected data,it useful for checking the prices of laptops.  
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" >
+    <h2>Contact:</h2>
+    <form action="/submit" method="POST" >
+      <label for="name">Full Name</label>  
+      <input type="text" name="name">
+      <label for="email">  Email</label>
+      <input type="email" name="email" ><br>
+      <label for="Comments">Comments</label><br>
+      <textarea id ="Comments" name="Comments" placeholder="Message"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
