@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #151414;
+}
+body #header {
+  background-color: #0b0b0b;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+body #header img {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+}
+
+.navbar.navbar-inverse {
+  background-color: #000;
+  border: none;
+}
+.navbar.navbar-inverse .navbar-header .navbar-toggle {
+  background-color: transparent;
+  border: none;
+}
+.navbar.navbar-inverse .navbar-header .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar.navbar-inverse .navbar-collapse #myNavbar ul.nav.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.section {
+  padding: 20px;
+}
+.section h2 {
+  font-size: 24px;
+  color: #333;
+}
+.section h2 p {
+  font-size: 16px;
+  color: #666;
+}
+
+.menu {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.menu .menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#team-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#team-images img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+#home .home-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .home-images img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact-form form {
+  max-width: 400px;
+  width: 100%;
+}
+.contact-form form label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+.contact-form form input,
+.contact-form form textarea {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form form button {
+  font-size: 16px;
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+#footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  #nav ul li a {
+    text-decoration: none;
+    color: #b9acac;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=style.css.map */

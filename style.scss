@@ -1,0 +1,140 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #151414;
+
+  #header {
+    background-color: #0b0b0b;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      width: 250px;
+      height: 200px;
+      text-align: center;
+    }
+  }
+}
+  .section {
+    padding: 20px;
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+
+      p {
+        font-size: 16px;
+        color: #666;
+      }
+    }
+  }
+
+  .menu {
+    background-color: #f9f9f9;
+    padding: 20px;
+
+    .menu-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+ 
+    #team-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      img {
+        flex: 1;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+  
+
+  #home {
+    .home-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    form {
+      max-width: 400px;
+      width: 100%;
+
+      label {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+      }
+
+      input,
+      textarea {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        font-size: 16px;
+        background-color: #008CBA;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+
+  #footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        display: inline;
+        margin-right: 20px;
+
+        a {
+          text-decoration: none;
+          color: #b9acac;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+

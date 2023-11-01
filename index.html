@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café De Peshawar</title>
+    <link rel="stylesheet" href="style/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" style="text-align: center; background-color: black;" >
+        <img src="logo.jpg" alt="Café De Peshawar Logo" style="width: 250px; height: 200px;align-items: center;">
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-inverse" >
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar" >
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="section" id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text text-center">
+                    <h2>Welcome to Café De Peshawar</h2>
+                    <p>Enjoy the finest cuisine and coffee in town! We take pride in serving you the best.</p>
+                </div>
+                <!-- Image Gallery for Home -->
+                <div class="home-images">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="cafe-image1.jpg" alt="Café Interior 1" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="cafe-image2.jpg" alt="Café Interior 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="cafe-image3.jpg" alt="Café Interior 3" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="section menu" id="menu">
+        <div class="container">
+            <h2 class="text-center">Our Menu</h2>
+            <div class="menu-item row">
+                <!-- Item 1 -->
+                <div class="col-sm-6">
+                    <div class="item">
+                        <h3>Egg and Cheese Sandwich</h3>
+                        <p>A delicious sandwich with scrambled eggs and melted cheese.</p>
+                        <p class="price">899 PKR</p>
+                        <!-- Image for Menu Item 1 -->
+                        <img src="menu-item1.jpg" alt="Egg and Cheese Sandwich" class="img-thumbnail">
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-sm-6">
+                    <div class="item">
+                        <h3>Pancakes Stack</h3>
+                        <p>Fluffy pancakes served with maple syrup.</p>
+                        <p class="price">1250 PKR</p>
+                        <!-- Image for Menu Item 2 -->
+                        <img src="menu-item2.jpg" alt="Pancakes Stack" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p>Café De Peshawar is your favorite neighborhood café, serving a variety of delightful dishes and beverages. We take pride in offering a cozy and inviting atmosphere for our customers.</p>
+        </div>
+    </div>
+
+    <!-- Our Team Section -->
+    
+    <div id="team" >
+        <div class="container" >
+            <h2 class="text-center">Our Team</h2>
+            <p>Meet our wonderful team at Café De Peshawar. We are dedicated to providing exceptional service and creating memorable experiences for our valued customers.</p>
+            <!-- Image Gallery for Our Team -->
+            <div class="team-images" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                <!-- Employee Image 1 -->
+                <img src="employee1.jpg" alt="Employee 1" class="img-thumbnail" style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 2 -->
+                <img src="employee4.jpg" alt="Employee 2" class="img-thumbnail" style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 3 -->
+                <img src="employee6.jpg" alt="Employee 3" class="img-thumbnail" style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 4 -->
+                <img src="employee5.jpg" alt="Employee 4" class="img-thumbnail" style="flex: 1; max-width: 25%; height:  auto;">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Us Section -->
+    <div class="section" id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Have questions or feedback? Contact us!</p>
+            <!-- Contact Form Container -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
