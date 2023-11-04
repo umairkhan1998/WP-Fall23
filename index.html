@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Form Block</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-">
+    <h1>OLMS</h1>
+    <h3>Book List</h3>
+    <p class="book-list">
+      1. Hacking: The Art of Exploitation by Jon Erickson<br>
+      3. C_Master:Coding in C++ is fun.<br>
+      4. python: 100 days of python<br> 
+    </p>
+  </div>
+
+  <div class="form-" style="border-left:1px solid #ccc;">
+    <div id="fo">
+      <form id="add-book-form">
+        <br>
+        <br>
+        <br>
+        <h3>Add New Book</h3>
+        <div>
+          <label for="title"></label>
+          <input type="text" id="title" name="title" placeholder="Title">
+          <span id="titleError" class="error"></span>
+        </div>
+        <br>
+        <div>
+          <label for="author"></label>
+          <input type="text" id="author" name="author" placeholder="Author" required>
+          <span id="authorError" class="error"></span>
+        </div>
+        <br>
+        <div>
+       <label for="ISBN"></label>
+       <input type="text" id="ISBN" name="ISBN" placeholder="ISBN">
+       <span id="ISBNError" class="error"></span>
+      </div>
+      <br>
+   <div>
+       <input type="submit" value="Add Book" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="form-" style="border-left:1px solid #ccc";>
+    <form id="form2">
+      <br>
+      <br>
+      <br>
+      <h3>Search For a New Book</h3>
+      <div>
+      <label for="Search"></label>
+    <input type="text" id="Search" name="Search" placeholder='Hacking' required>
+    <span id="SearchError" class="error"></span>
+    </div>
+    <br>
+    <div>
+    <button type="button" id="search-button" class="btn btn-primary">Search</button>
+    </div>
+    <br>
+    <p id="search-results">You will see result here.</p>
+    </form>
+    </div>
+    </div>
+
+
+<script>
+  const addBookForm = document.getElementById('add-book-form');
+  const bookList = document.querySelector(".book-list");
+  const searchButton = document.getElementById("search-button");
+
+  addBookForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    validateForm();
+  });
+
+  searchButton.addEventListener('click', function() {
+    searchBook();
+  });
+
+  function validateForm() {
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const ISBN = document.getElementById('ISBN').value;
+
+    const titleError = document.getElementById('titleError');
+    const authorError = document.getElementById('authorError');
+    const ISBNError = document.getElementById('ISBNError');
+
+    titleError.textContent = !title ? 'Enter a Book title' : '';
+    authorError.textContent = !author ? 'Enter Author name' : '';
+    ISBNError.textContent = !ISBN ? 'Enter ISBN number' : '';
+
+    if (title && author && ISBN) {
+      
+      const bookEntries = bookList.textContent;
+      const newBook = `${title} by ${author} ISBN: ${ISBN}`;
+      if (bookEntries.includes(newBook)) {
+        alert("This book already exists in the list.");
+      } else {
+    
+        const newBookElement = document.createElement("p");
+        newBookElement.textContent = newBook;
+        bookList.appendChild(newBookElement);
+        document.getElementById('title').value = '';
+        document.getElementById('author').value = '';
+        document.getElementById('ISBN').value = '';
+      }
+      }}
+  
+  function searchBook() {
+    const searchQuery = document.getElementById('Search').value;
+    const bookEntries = bookList.textContent;
+    const searchResults = document.getElementById('search-results');
+
+    if (bookEntries.includes(searchQuery)) {
+      searchResults.textContent = `${searchQuery} is available.`;
+    } else {
+      searchResults.textContent = `${searchQuery} is not available.`;
+    }}
+  
+</script>
+
+</body>
+</html>
